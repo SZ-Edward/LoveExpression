@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>「大灰狼和小兔子」</title>
+</head>
+<body>
+	<header></header>
+    <h1>Our Love's Timeline</h1>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>相识</h2>
+                <p>在知乎上浏览帖子时，无意中看到了你的回答，一股强烈的好奇心怂恿我在你的回答下留言，于是我们交换了微信，就这样相识了。感谢知乎！</p>
+				<a class="cd-read-more" style="display: none;">Read more</a>
+				<span class="cd-date">2016/08/03</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>相恋</h2>
+                <p>常常感叹遇见你我是多么的幸运，与你相恋更是一件幸福的事情，你会体贴地提醒我按时吃饭，与我分享快乐分担烦恼。</p>
+				<a class="cd-read-more" style="display: none;">Read more</a>
+				<span class="cd-date">2016/08/05</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第一份礼物</h2>
+                <p>一份惊喜：贴心的你，送了一个Cherry红轴键盘给我。</p>
+				<a class="cd-read-more" onclick="showOrHideImg('first_gift');">Read more</a>
+				<span class="cd-date">2016/08/07</span>
+                <img id="first_gift" src="img/cherry.jpg" style="display: none; padding-top: 10px;">
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第一个七夕</h2>
+                <p>这是我们相恋后的第一个情人节——七夕，因为相隔两地，我们通过微信视频互诉衷情。</p>
+				<a class="cd-read-more" onclick="showOrHideImg('first_valentine_day');">Read more</a>
+				<span class="cd-date">2016/08/09</span>
+                <img id="first_valentine_day" src="img/520.jpg" style="display: none; padding-top: 10px;">
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第一次见面</h2>
+                <p>2016年8月11日 23:50分左右，在深圳宝安机场，我们见面了。本来想着给你一个拥抱，奈何走错了出口，然后急急忙忙地到处找你，第一眼就是你笑着叫我的名字，那么甜那么美。</p>
+				<a class="cd-read-more" onclick="showOrHideImg('first_sight');">Read more</a>
+				<span class="cd-date">2016/08/11</span>
+                <img id="first_sight" src="img/us.jpg" style="display: none; padding-top: 10px;">
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>未完待续...</h2>
+				<p>人世间最好的事情，并不是我遇见了你，而是到了许多年后，我依旧庆幸曾经遇见了你。不变的爱，才是最好的运气。</p>
+				<span class="cd-date">Feb 26</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+    function showOrHideImg(_id) {
+        if(!_id || !_id.length) {
+            return;
+        }
+        var img = document.getElementById(_id);
+        if(img.style.display == "none") {
+            img.style.display = "inline-block";
+        } else{
+            img.style.display = "none";
+        }
+
+    };
+</script>
+</body>
+</html>
