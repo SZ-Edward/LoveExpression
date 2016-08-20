@@ -63,7 +63,7 @@ Main components
 header {
   height: 200px;
   line-height: 200px;
-  background: url(../img/elephants.jpg) #303e49 center no-repeat;
+  background: url(../img/theme_img.jpg) #303e49 center no-repeat;
   background-size: 400px 300px;
 }
 body h1 {

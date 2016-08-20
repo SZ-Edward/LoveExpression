@@ -1,16 +1,17 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+	<link href='http://libs.useso.com/' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
-	<title>「大灰狼和小兔子」</title>
+	<title>「小白羊和小白兔」</title>
 </head>
 <body>
 	<header></header>
@@ -52,7 +53,7 @@
                 <p>一份惊喜：贴心的你，送了一个Cherry红轴键盘给我。</p>
 				<a class="cd-read-more" onclick="showOrHideImg('first_gift');">Read more</a>
 				<span class="cd-date">2016/08/07</span>
-                <img id="first_gift" src="img/cherry.jpg" style="display: none; padding-top: 10px;">
+                <img id="first_gift" src="img/first_gift.jpg" style="display: none; padding-top: 10px;">
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
@@ -66,7 +67,7 @@
                 <p>这是我们相恋后的第一个情人节——七夕，因为相隔两地，我们通过微信视频互诉衷情。</p>
 				<a class="cd-read-more" onclick="showOrHideImg('first_valentine_day');">Read more</a>
 				<span class="cd-date">2016/08/09</span>
-                <img id="first_valentine_day" src="img/520.jpg" style="display: none; padding-top: 10px;">
+                <img id="first_valentine_day" src="img/first_valentine_day.jpg" style="display: none; padding-top: 10px;">
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
@@ -80,7 +81,7 @@
                 <p>2016年8月11日 23:50分左右，在深圳宝安机场，我们见面了。本来想着给你一个拥抱，奈何走错了出口，然后急急忙忙地到处找你，第一眼就是你笑着叫我的名字，那么甜那么美。</p>
 				<a class="cd-read-more" onclick="showOrHideImg('first_sight');">Read more</a>
 				<span class="cd-date">2016/08/11</span>
-                <img id="first_sight" src="img/us.jpg" style="display: none; padding-top: 10px;">
+                <img id="first_sight" src="img/first_sight.jpg" style="display: none; padding-top: 10px;">
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
@@ -96,7 +97,7 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script>
     function showOrHideImg(_id) {
@@ -104,12 +105,12 @@
             return;
         }
         var img = document.getElementById(_id);
-        if(img.style.display == "none") {
-            img.style.display = "inline-block";
-        } else{
-            img.style.display = "none";
-        }
-
+        img.style.display = img.style.display == "none" ? "inline-block" : "none";
+//        if(img.style.display == "none") {
+//            img.style.display = "inline-block";
+//        } else{
+//            img.style.display = "none";
+//        }
     };
 </script>
 </body>
